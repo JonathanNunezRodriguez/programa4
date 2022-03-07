@@ -1,0 +1,38 @@
+-> empezar programa
+-> pedir 2 numeros (x y dof)
+    -> x debe ser un numero real mayor o igual a 0: Number(x)
+    -> dof debe ser un numero entero mayor o igual a 0: parseInt(dof)
+-> aplicar funcion F(x)
+    -> funcion gama(y) es recursiva y depende si "y" es entero o fraccion
+        -> si es entero: calcular factorial
+        -> si es fraccion: aplicar recursividad
+-> imprimir resultados
+    -> x   = #.#####
+       dof = ##
+       p   = #.#####
+
+
+
+class main
+    pedir una variable "x", checar que sea un numero real mayor o igual a 0
+
+    pedir una variable "dof", checar que sea un numero entero mayor o igual a 0
+
+    crear objeto SimpsonMethod con "x" y "dof"
+
+    aplicar calculos SimpsonMethod.getP()
+
+    imprimir los resultados
+
+class SimpsonMethod
+    guardar x, dof
+
+    contructor con argumentos de x y dof
+
+    metodo privado para calcular gama recursivo
+
+    metodo para calucular p
+
+    metodo para calcular gama
+
+    metodo para imprimir resultados

@@ -10,6 +10,9 @@
     "prebuild": "tsc",
     "build": "pkg ."
   },
+  "bin": {
+    "main": "./dist/main.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
