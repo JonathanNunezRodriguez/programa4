@@ -23,19 +23,26 @@ const main = async () => {
 
         //.d=7
 
-        x = Number(x);
+        if (x === "") {
 
-        if (isNaN(x)) {
-            
-            console.log('Se introdujo un caracter en vez de un numero real mayor o igual a 0');
-            
-        } else if (x < 0) {
-
-            console.log('Se introdujo un numero menor a 0 en vez de un numero real mayor o igual a 0');
+            console.log('Se introdujo un vacio en vez de un numero real mayor o igual a 0');
 
         } else {
 
-            repeat = false;
+            x = Number(x);
+
+            if (isNaN(x)) {
+                
+                console.log('Se introdujo un caracter en vez de un numero real mayor o igual a 0');
+                
+            } else if (x < 0) {
+
+                console.log('Se introdujo un numero menor a 0 en vez de un numero real mayor o igual a 0');
+
+            } else {
+
+                repeat = false;
+            }
         }        
     }
 
